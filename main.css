@@ -1,0 +1,240 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{ 
+    background: url(background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(29, 30, 31, 0.9);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+section{
+    background-color: rgba(6, 64, 123, 0.9);
+    color: rgb(255, 255, 255);
+    position: relative;
+
+}
+
+/* 
+* For header logo
+*/
+
+.logo:link {
+    color: rgb(221, 221, 221);
+    font-size: 26px;
+    float: left;
+    margin: 14px 0;
+    font-weight: bold;
+}
+
+.logo:visited{
+    color: rgb(221, 221, 221);
+}
+
+.logo:hover{
+    text-decoration: none;
+}
+
+/* 
+* For header navigation list and items
+*/
+
+.top-nav{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.top-nav-link{
+    margin: 0;
+    margin-top: 0;
+    float: right;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-nav-link li{
+    display: inline-block;
+    margin: 0 10px;
+    padding: 20px 0;
+}
+
+.top-nav-link li:first-of-type{
+    margin-left: 0;
+}
+
+.top-nav-link li:last-of-type{
+    margin-right: 0;
+}
+
+.top-nav-link li a:link, .top-nav-link li a:visited{
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 5px 0;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+}
+
+.top-nav-link li a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid orange;
+    color: rgb(61, 188, 185);
+}
+
+/* 
+* For header Hamburger/drop down button on 750px for mobile
+*/
+
+.hamburger{
+    float: right;
+    font-size: 30px;
+    margin: 12px 0;
+    color: #b7d1d1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3 ease;
+    -moz-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    display: none;
+}
+
+.hamburger:hover{
+    color: #0c4d4d;
+}
+
+/* 
+* For tablet screen size
+*/
+
+@media only screen and (min-width: 751px) and (max-width: 1000px){
+    .top-nav-link li {
+        margin: 0 5px;
+        margin-top: 0;
+    }
+}
+
+/* 
+* For mobile screen size
+*/
+
+@media only screen and (max-width: 750px){
+    .top-nav-link{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: -393px;
+        padding: 0;
+    }
+
+    .top-nav-link li{
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    .top-nav-link li:hover{
+        background-color: rgb(29, 30, 31);
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3 ease;
+        -moz-transition: all 0.3 ease;
+        -o-transition: all 0.3 ease;
+    }
+
+    .top-nav-link li:hover a{
+        color: rgb(255, 255, 255);
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3 ease;
+        -moz-transition: all 0.3 ease;
+        -o-transition: all 0.3 ease;
+    }
+    
+    .hamburger{
+        display: inline-block;
+    }
+}
+
+/* 
+* For section text blocks and h2
+*/
+
+.offer{
+    text-align: center;
+    padding: 20vh 0 5vh 0;
+}
+
+.text-block{
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.extra{
+    height: 150vh;
+}
+
+/* 
+* Back to top button
+*/
+
+.go-top{
+    bottom: 20px;
+    position: fixed;
+    font-size: 20px;
+    right: 25px;
+    z-index: 800;
+    background: #82b440;
+    color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0;
+}
+
+.go-top.show{
+    opacity: 1;
+}
+
+.go-top:hover{
+    background: #07AAA5;
+    color: #fff;
+}
