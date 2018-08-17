@@ -61,6 +61,6 @@ if ($('.go-top').length) {
 $('.cenas').click(function (e){
     e.preventDefault();
     $('html,body').animate({
-        scrollTop: 200
+        scrollTop: 100
     }, 400);
 });
