@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400%7COpen+Sans:400,300" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -17,18 +18,18 @@
             <div class="col-xs-12">
                 <div class="top-nav clearfix">
                     <a href="index.html" class="logo">TopNav</a>
-                    <ion-icon name="menu"class="hamburger"></ion-icon>
-                    <ul class="top-nav-link">
-                        <li>
-                            <a href="#">Sākums</a>
+                    <ion-icon name="menu" class="hamburger"></ion-icon>
+                    <ul class="top-nav-link" id="list">
+                        <li class="active">
+                            <a href="#sakums">Sākums</a>
                         </li><li class="cenas">
-                            <a href="#" class="cenas">Cenas</a>
+                            <a href="#cenas" class="cenas">Cenas</a>
                         </li><li>
-                            <a href="#">Pakalpojumi</a>
+                            <a href="#pakalpojumi" class="btn-pakalpojumi">Pakalpojumi</a>
                         </li><li>
-                            <a href="#">Galerija</a>
+                            <a href="#galerija">Galerija</a>
                         </li><li>
-                            <a href="#">Kontakti</a>
+                            <a href="#kontakti">Kontakti</a>
                         </li>
                     </ul>
                 </div>
@@ -36,7 +37,45 @@
         </div>
     </div>
 </header>
+<main>
+    <a id="sakums"></a>
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-interval="30000" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="col-xs-12 relative">
+                        <div class="offset">
+                            <img src="img/carousel1.jpg" class="img-responsive">
+                            <div class="carousel-text"><span></span>Road to mountains</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-xs-12 relative">
+                        <div class="offset">
+                            <img src="img/carousel2.jpg" class="img-responsive">
+                            <div class="carousel-text"><span></span>Mountain river</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-xs-12 relative">
+                        <div class="offset">
+                            <img src="img/carousel3.jpg" class="img-responsive">
+                            <div class="carousel-text"><span>Lake between</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            </a>
+        </div>        
+    </div>
+</main>
 <section>
+    <a id="cenas"></a>
     <div class="container">
         <div class="row">
             <div class="col-md-12 offer">
@@ -47,15 +86,15 @@
                 <div class="extra">
                     <div class="row">
                         <div class="col-sm-12 col-md-6 col-lg-4 text-block">
-                            <h2>Text Area</h2>
+                            <h2>About myself</h2>
                             <p>Do we even need text?</p>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 text-block">
-                            <h2>Text Field</h2>
+                            <h2>About the site</h2>
                             <p>Do we even need Mustache?</p>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4 text-block">
-                            <h2>Text Adding</h2>
+                            <h2>About life</h2>
                             <p>Do we even need Sex?</p>
                         </div>
                     </div>
@@ -65,6 +104,7 @@
     </div>
 </section>
 <footer>
+    <a id="pakalpojumi"></a>
 
 </footer>
 <a href="#" class="go-top show">
@@ -73,6 +113,7 @@
 
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="//unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
+<script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 <script src="main.js"></script>
 </body>
 </html>
