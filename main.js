@@ -1,5 +1,5 @@
 // ========================================================================= 
-//	Hamburger/drop down button on 750px for mobile
+//	Hamburger/drop down button on 767px for mobile
 // ========================================================================= 
 
 $('.hamburger').click(function(){
@@ -11,12 +11,12 @@ $('.hamburger').click(function(){
 });
 
 $(window).resize(function() {
-    if (window.innerWidth > 750) {
+    if (window.innerWidth > 767) {
         $('.top-nav-link').css('margin-top', '0');
-        $('header').removeClass('header-background');
+        $('header').addClass('header-background');
     } else {
         $('.top-nav-link').css('margin-top', '-393px');
-        $('header').addClass('header-background');
+        $('header').removeClass('header-background');
     }
 });
 
@@ -50,7 +50,7 @@ if ($('.go-top').length) {
 //	Scroll to selected navigation hashes/articles
 // ========================================================================= 
 
-$('.top-nav-link a[href*="#"]').click(function(event) {
+$('.top-nav-link a[href*="#"], .pimg2 a[href*="#"]').click(function(event) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         let target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');

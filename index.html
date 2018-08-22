@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Top Nav</title>
+    <title>Edgars Liepajnieks</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -17,17 +17,17 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="top-nav clearfix">
-                    <a href="index.html" class="logo">TopNav</a>
+                    <a href="index.html" class="logo">Liepiņš</a>
                     <ion-icon name="menu" class="hamburger"></ion-icon>
                     <ul class="top-nav-link" id="list">
                         <li class="active">
                             <a href="#sakums">Sākums</a>
                         </li><li class="cenas">
-                            <a href="#cenas" class="cenas">Cenas</a>
+                            <a href="#cenas">Cenas</a>
                         </li><li>
-                            <a href="#pakalpojumi" class="btn-pakalpojumi">Pakalpojumi</a>
+                            <a href="#pakalpojumi">Pakalpojumi</a>
                         </li><li>
-                            <a href="#galerija">Galerija</a>
+                            <a href="">Galerija</a>
                         </li><li>
                             <a href="#kontakti">Kontakti</a>
                         </li>
@@ -39,39 +39,42 @@
 </header>
 <main>
     <a id="sakums"></a>
-    <div class="container">
-        <div id="carouselExampleControls" class="carousel slide" data-interval="30000" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="col-xs-12 relative">
-                        <div class="offset">
-                            <img src="img/carousel1.jpg" class="img-responsive">
-                            <div class="carousel-text"><span></span>Road to mountains</span></div>
+    <div class="pimg1">
+        <div class="container">
+            <div id="carouselTextControls" class="carousel first-carousel slide" data-interval="30000" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-xs-12 relative">
+                            <div class="offset">
+                                <h2 class="carousel-text">Edgars Liepājnieks</h2>
+                                <div class="carousel-text-under"><span>Cilvēks kuru tu meklē</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-xs-12 relative">
+                            <div class="offset">
+                                <h2 class="carousel-text">Mājaslapu izstrādātājs</h2>
+                                <div class="carousel-text-under"><span>Pus gadu pieredze mājaslapu izgatavošanā, uzturēšanā un testēšanā</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-xs-12 relative">
+                            <div class="offset">
+                                <h2 class="carousel-text">Ekskluzīvo jahtu inženieris</h2>
+                                <div class="carousel-text-under"><span>Trīs gadu pieredze ekskluzīvo jahtu ražošanas sfērā</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="col-xs-12 relative">
-                        <div class="offset">
-                            <img src="img/carousel2.jpg" class="img-responsive">
-                            <div class="carousel-text"><span></span>Mountain river</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-xs-12 relative">
-                        <div class="offset">
-                            <img src="img/carousel3.jpg" class="img-responsive">
-                            <div class="carousel-text"><span>Lake between</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            </a>
-        </div>        
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselTextControls" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselTextControls" data-slide-to="1"></li>
+                    <li data-target="#carouselTextControls" data-slide-to="2"></li>
+                </ol>
+            </div>        
+        </div>
     </div>
 </main>
 <section>
@@ -79,23 +82,39 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 offer">
-                <p class="title">Our Valued Services</p>
-                <h2 class="heading">What we Offer</h2>
+                <p class="title">Izvēlies sev piemērotāko piedāvājumu!</p>
+                <h2 class="heading">Cenu piedāvājums mājaslapu izstrādei</h2>
             </div>
             <div class="col-xs-12 offer-items">
                 <div class="extra">
                     <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-4 text-block">
-                            <h2>About myself</h2>
-                            <p>Do we even need text?</p>
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 text-block">
+                            <div class="first-sections-block">
+                                <img src="img/small1.jpg" class="img-enlarge">
+                                <h2 class="h2-margin">Bronza 200&#8364</h2>
+                                <p>Vienkārša mājaslapa ar minimālām dizaina un funkcijas prasībām.</p>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 text-block">
-                            <h2>About the site</h2>
-                            <p>Do we even need Mustache?</p>
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 text-block">
+                            <div class="first-sections-block">
+                                <img src="img/small2.jpg" class="img-enlarge">
+                                <h2 class="h2-margin">Sudrabs 300&#8364</h2>
+                                <p>Mājaslapa ar dizainu, bet bez īpašām funkcijas prasībām.</p>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4 text-block">
-                            <h2>About life</h2>
-                            <p>Do we even need Sex?</p>
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 text-block">
+                            <div class="first-sections-block">
+                                <img src="img/small3.jpg" class="img-enlarge">
+                                <h2 class="h2-margin">Zelts 400&#8364</h2>
+                                <p>Mājaslapa ar dizainu un Jūsu izvēlētām funkcijām.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 text-block">
+                            <div class="first-sections-block">
+                                <img src="img/small4.jpg" class="img-enlarge">
+                                <h2 class="h2-margin">Platīns 100'000&#8364</h2>
+                                <p>Valsts pasūtījumu mājaslapa, valsts izzagšanai.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,9 +122,66 @@
         </div>
     </div>
 </section>
-<footer>
+<div class="second-parralax">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="pimg2">
+                <div class="container">
+                    <div class="ptext">
+                        <a href="#kontakti">
+                            <span class="border">
+                                Pasūti savu mājaslapu
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section>
     <a id="pakalpojumi"></a>
-
+    <div class="container">
+        <div class="second-carousel-text">
+            <h2>Mani darbi</h2>
+            <p>Darbi ir veidoti, lai apgūtu kādas konkrētas zināšanas</p>
+        </div>
+        <div id="carouselControls" class="carousel second-carousel slide" data-interval="30000" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="col-xs-12 relative">
+                        <div class="offset">
+                            <img src="img/projects1.jpg" class="img-responsive">
+                            <div class="carousel-text"><span>Riga Coding School Kursa darbs</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-xs-12 relative">
+                        <div class="offset">
+                            <img src="img/projects2.jpg" class="img-responsive">
+                            <div class="carousel-text"><span>Magebit tests</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-xs-12 relative">
+                        <div class="offset">
+                            <img src="img/projects3.jpg" class="img-responsive">
+                            <div class="carousel-text"><span>Personisks pasūtījums</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+            </a>
+        </div>        
+    </div>
+</section>
+<footer>
+    <a id="kontakti"></a>
 </footer>
 <a href="#" class="go-top show">
     <ion-icon name="arrow-round-up"></ion-icon>

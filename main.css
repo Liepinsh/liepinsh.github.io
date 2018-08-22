@@ -4,22 +4,14 @@
     box-sizing: border-box;
 }
 
-html{ 
-    background: url(/img/background1.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+body, html{ 
     font-family: 'Open Sans', sans-serif;
-}
-
-body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
     font-size: 16px;
     color: #333;
-    background: transparent;
+    height: 100%;
 }
 
 header{
@@ -33,49 +25,30 @@ header{
     z-index: 999;
 }
 
-.header-background{
-    background-color: rgb(151, 123, 69);
+main{
+    height: 70%;
 }
 
-/* main{
-    background: url(/img/background.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 80%;
-} */
-
 section{
-    background-color: rgba(6, 64, 123, 0.9);
-    color: rgb(255, 255, 255);
+    background-color: #f4f4f4;
+    color: #666;
     position: relative;
-
 }
 
 /* 
 * For header logo
 */
 
-.logo:link {
-    color: #333;
+.logo:link, .logo:visited{
+    color: #f4f4f4;
     font-size: 26px;
     float: left;
     margin: 14px 0;
     font-weight: bold;
 }
 
-.logo:visited{
-    color: #333;
-}
-
 .logo:hover{
     text-decoration: none;
-}
-
-.header-change .logo:link, .header-change .logo:visited{
-    color: rgb(255, 255, 255);
 }
 
 /* 
@@ -116,7 +89,7 @@ section{
 }
 
 .top-nav-link li a:link, .top-nav-link li a:visited{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     border-bottom: 2px solid transparent;
     padding: 5px 0;
@@ -126,6 +99,8 @@ section{
     -moz-transition: all 0.3 ease;
     -o-transition: all 0.3 ease;
     display: block;
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .top-nav-link li a:hover{
@@ -135,7 +110,7 @@ section{
 }
 
 .header-change{
-    background-color: #333;
+    background-color: rgb(93, 93, 93);
 }
 
 .header-change li a:link, .header-change li a:visited{
@@ -154,11 +129,11 @@ section{
 .header-change li a:hover{
     text-decoration: none;
     border-bottom: 2px solid orange;
-    color: rgb(61, 188, 185);
+    color: rgb(255, 238, 5);
 }
 
 /* 
-* For header Hamburger/drop down button on 750px for mobile
+* For header Hamburger/drop down button on 767px for mobile
 */
 
 .hamburger{
@@ -166,13 +141,197 @@ section{
 }
 
 /* 
+* Back to top button
+*/
+
+.go-top{
+    bottom: 20px;
+    position: fixed;
+    font-size: 20px;
+    right: 25px;
+    z-index: 800;
+    background: #82b440;
+    color: #f4f4f4;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0;
+}
+
+.go-top.show{
+    opacity: 1;
+}
+
+.go-top:hover{
+    background: #07AAA5;
+    color: #f4f4f4;
+}
+
+/* 
+* Carousel
+*/
+
+.first-carousel{
+    padding: 26vh 0 2vh;
+}
+
+.offset{
+    padding: 10px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 50%;
+    margin: 200px 0 50px 0;
+}
+
+.carousel-text{
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #282e34;
+    color: #ddd;
+    border: 1px solid #f4f4f4;
+}
+
+.carousel-text-under{
+    text-align: center;
+    color: #ddd;
+    margin: 0px auto 30px;
+    width: fit-content;
+}
+
+.carousel-item{
+    transition: all .6s ease;
+}
+
+.carousel-indicators li, .carousel-indicators .active{
+    width: 30px;
+    height: 10px;
+    margin: 0 5px;
+    border: 1px solid #282e34;
+    background: #f4f4f4;
+}
+
+.carousel-indicators .active{
+    background: #cc0707;
+}
+
+.second-carousel{
+    opacity: 0.7;
+}
+
+.second-carousel-text{
+    text-align: center;
+    margin: 80px 0 20px;
+}
+
+/* 
+* First sections imgages and text
+*/
+
+.offer{
+    text-align: center;
+    padding: 80px 0 20px;
+}
+
+.offer-items{
+    margin-bottom: 50px;
+}
+
+.text-block{
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.img-enlarge{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.img-enlarge:hover{
+    transform: scale(1.2, 1.2);
+    opacity: 1;
+}
+
+.h2-margin{
+    margin-top: 30px;
+}
+
+.first-sections-block{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+/* 
+* First parallax image for main
+*/
+
+.pimg1, .pimg2{
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url('img/paralax1.jpg');
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url('img/paralax2.jpg');
+    min-height: 400px;
+}
+
+/* 
+* Second parralax div section
+*/
+
+.ptext{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin: 200px auto;
+}
+
+.ptext .border{
+    background-color: #111;
+    opacity: 0.8;
+    color: #f4f4f4;
+    padding: 20px;
+}
+
+.pimg2 a:hover{
+    text-decoration: none;
+}
+
+/* 
 * For tablet screen size
 */
 
-@media only screen and (min-width: 751px) and (max-width: 1000px){
+@media only screen and (min-width: 768px) and (max-width: 1000px){
     .top-nav-link li {
         margin: 0 5px;
         margin-top: 0;
+    }
+    
+    .top-nav-link li a:link, .top-nav-link li a:visited{
+        letter-spacing: 1px;    
     }
 }
 
@@ -180,7 +339,16 @@ section{
 * For mobile screen size
 */
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 767px){
+
+    /* 
+    * Turn parallax effect off for mobile screen size
+    */
+
+    .pimg1{
+        background-attachment: scroll;
+    }
+
     /* 
     * For header navigation list and items mobile screen size
     */
@@ -219,7 +387,7 @@ section{
     }
     
     .top-nav-link li a:link, .top-nav-link li a:visited{
-        color: rgb(0, 0, 0);
+        color: #f4f4f4;
         text-decoration: none;
         font-size: 12px;
         transition: all 0.3s ease;
@@ -227,7 +395,6 @@ section{
         -moz-transition: all 0.3 ease;
         -o-transition: all 0.3 ease;
         display: block;
-        background-color: rgb(151, 123, 69);
     }
     
     .top-nav-link li a:hover{
@@ -247,25 +414,12 @@ section{
         -moz-transition: all 0.3 ease;
         -o-transition: all 0.3 ease;
         display: block;
-        background-color: #333;
     }
 
     .header-change li a:hover{
         text-decoration: none;
         background-color: rgb(0, 0, 0);
         color: orange;
-    }
-
-    /* 
-    * For UL mobile screen size
-    */
-
-    ul{
-        background-color: rgb(151, 123, 69);
-    }
-
-    .header-change ul{
-        background-color: #333;
     }
 
     /* 
@@ -276,7 +430,7 @@ section{
         float: right;
         font-size: 30px;
         margin: 12px 0;
-        color: #333;
+        color: #f4f4f4;
         cursor: pointer;
         transition: all 0.3s ease;
         -webkit-transition: all 0.3 ease;
@@ -298,88 +452,10 @@ section{
     }
 
     /* 
-    * For header logo mobile screen size
+    * Second parralax div section
     */
 
-    .header-change .logo:link, .header-change .logo:visited{
-        color: rgb(255, 255, 255);
+    .ptext{
+        font-size: 16px;
     }
-}
-
-/* 
-* For section text blocks and h2
-*/
-
-.offer{
-    text-align: center;
-    padding: 20vh 0 5vh 0;
-}
-
-.text-block{
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.extra{
-    height: 150vh;
-}
-
-/* 
-* Back to top button
-*/
-
-.go-top{
-    bottom: 20px;
-    position: fixed;
-    font-size: 20px;
-    right: 25px;
-    z-index: 800;
-    background: #82b440;
-    color: #fff;
-    border-radius: 5px;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    line-height: 40px;
-    opacity: 0;
-}
-
-.go-top.show{
-    opacity: 1;
-}
-
-.go-top:hover{
-    background: #07AAA5;
-    color: #fff;
-}
-
-/* 
-* Carousel
-*/
-
-.carousel{
-    padding: 20vh 0 5vh;
-}
-
-.offset{
-    padding: 10px;
-}
-
-.carousel-control-prev, .carousel-control-next{
-    width: 50%;
-    margin: 200px 0 50px 0;
-}
-
-.carousel-text{
-    color: white;
-    text-align: center;
-    width: fit-content;
-    background-color: rgba(29, 30, 31, 0.8);
-    padding: 10px;
-    margin: 10px auto;
-}
-
-.carousel-item{
-    transition: transform .6s ease;
 }
