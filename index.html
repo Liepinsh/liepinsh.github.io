@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400%7COpen+Sans:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -41,7 +42,7 @@
     <a id="sakums"></a>
     <div class="pimg1">
         <div class="container">
-            <div id="carouselTextControls" class="carousel first-carousel slide" data-interval="30000" data-ride="carousel">
+            <div id="carouselTextControls" class="carousel first-carousel slide" data-interval="6000" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="col-xs-12 relative">
@@ -124,14 +125,14 @@
 </section>
 <div class="second-parralax">
     <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 second-paralax-padding">
             <div class="pimg2">
                 <div class="container">
                     <div class="ptext">
                         <a href="#kontakti">
-                            <span class="border">
+                            <p class="border">
                                 Pasūti savu mājaslapu
-                            </span>
+                            </p>
                         </a>
                     </div>
                 </div>
@@ -146,29 +147,29 @@
             <h2>Mani darbi</h2>
             <p>Darbi ir veidoti, lai apgūtu kādas konkrētas zināšanas</p>
         </div>
-        <div id="carouselControls" class="carousel second-carousel slide" data-interval="30000" data-ride="carousel">
+        <div id="carouselControls" class="carousel second-carousel slide" data-interval="6000" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="col-xs-12 relative">
                         <div class="offset">
-                            <img src="img/projects1.jpg" class="img-responsive">
                             <div class="carousel-text"><span>Riga Coding School Kursa darbs</span></div>
+                            <img src="img/projects1.jpg" class="img-responsive">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-xs-12 relative">
                         <div class="offset">
-                            <img src="img/projects2.jpg" class="img-responsive">
                             <div class="carousel-text"><span>Magebit tests</span></div>
+                            <img src="img/projects2.jpg" class="img-responsive">
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="col-xs-12 relative">
                         <div class="offset">
-                            <img src="img/projects3.jpg" class="img-responsive">
                             <div class="carousel-text"><span>Personisks pasūtījums</span></div>
+                            <img src="img/projects3.jpg" class="img-responsive">
                         </div>
                     </div>
                 </div>
@@ -180,6 +181,32 @@
         </div>        
     </div>
 </section>
+<div class="third-parralax">
+    <div class="row">
+        <div class="col-xs-12 third-paralax-padding">
+            <div class="pimg3">
+                <div class="container">
+                    <a data-fancybox href="https://www.youtube.com/embed/GcXiDsPD0lw?list=LLhSzehEvvAbXm2JvU9CmdxQ" class="youtube">
+                        <div class="youtube-text">
+                            <h2>You<span>Tube</span></h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container vid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="video">
+                <iframe class="iframe" 
+                    src="//www.youtube.com/embed/5wXrw_B9J14?list=FLhSzehEvvAbXm2JvU9CmdxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
 <footer>
     <a id="kontakti"></a>
 </footer>
@@ -190,6 +217,7 @@
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="//unpkg.com/ionicons@4.3.0/dist/ionicons.js"></script>
 <script src="//stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>

@@ -5,6 +5,9 @@
 $('.hamburger').click(function(){
     if ($('.top-nav-link').css('margin-top') == '-393px') {
         $('.top-nav-link').css('margin-top', '0');
+        // $(document).on( "click", function() {
+        //     console.log('ss');
+        //   });
     } else  {
         $('.top-nav-link').css('margin-top', '-393px');
     }

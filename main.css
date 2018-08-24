@@ -12,6 +12,7 @@ body, html{
     font-size: 16px;
     color: #333;
     height: 100%;
+    /* overflow-x: hidden; */
 }
 
 header{
@@ -25,9 +26,9 @@ header{
     z-index: 999;
 }
 
-main{
+/* main{
     height: 70%;
-}
+} */
 
 section{
     background-color: #f4f4f4;
@@ -174,7 +175,7 @@ section{
 */
 
 .first-carousel{
-    padding: 26vh 0 2vh;
+    padding: 26vh 0 20vh;
 }
 
 .offset{
@@ -183,14 +184,14 @@ section{
 
 .carousel-control-prev, .carousel-control-next{
     width: 50%;
-    margin: 200px 0 50px 0;
+    margin: 20px 0 0;
 }
 
 .carousel-text{
     text-align: center;
     width: fit-content;
     padding: 10px;
-    margin: 20px auto;
+    margin: 0 auto 20px;
     background-color: #282e34;
     color: #ddd;
     border: 1px solid #f4f4f4;
@@ -207,6 +208,10 @@ section{
     transition: all .6s ease;
 }
 
+.carousel-indicators {
+    position: relative;
+}
+
 .carousel-indicators li, .carousel-indicators .active{
     width: 30px;
     height: 10px;
@@ -221,11 +226,12 @@ section{
 
 .second-carousel{
     opacity: 0.7;
+    padding: 0 0 50px;
 }
 
 .second-carousel-text{
     text-align: center;
-    margin: 80px 0 20px;
+    margin: 80px 0 0;
 }
 
 /* 
@@ -275,7 +281,7 @@ section{
 * First parallax image for main
 */
 
-.pimg1, .pimg2{
+.pimg1, .pimg2, .pimg3{
     position: relative;
     opacity: 0.7;
     background-position: center;
@@ -291,6 +297,11 @@ section{
 
 .pimg2{
     background-image: url('img/paralax2.jpg');
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url('img/paralax3.jpg');
     min-height: 400px;
 }
 
@@ -318,6 +329,68 @@ section{
 
 .pimg2 a:hover{
     text-decoration: none;
+}
+
+/* 
+* To remove the unwanted border from bootstrap
+*/
+
+.second-paralax-padding, .third-paralax-padding{
+    padding: 0;
+}
+
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* 
+* Youtube video/fancybox
+*/
+
+.youtube:visited, .youtube:link, .youtube:hover{
+    text-decoration: none;
+}
+
+.youtube-text{
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    opacity: 0.8;
+    width: fit-content;
+    margin: 200px auto;
+}
+
+.youtube-text h2{
+    font-size: 50px;
+    padding: 0 5px;
+}
+
+.youtube-text h2 span{
+    color: red;
+}
+
+/* 
+* Video at the end
+*/
+
+.video{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+}
+
+.vid{
+    padding: 50px 0;
+}
+
+.iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 40px;
 }
 
 /* 
