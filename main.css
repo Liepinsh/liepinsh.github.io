@@ -12,7 +12,6 @@ body, html{
     font-size: 16px;
     color: #333;
     height: 100%;
-    /* overflow-x: hidden; */
 }
 
 header{
@@ -25,10 +24,6 @@ header{
     width: 100%;
     z-index: 999;
 }
-
-/* main{
-    height: 70%;
-} */
 
 section{
     background-color: #f4f4f4;
@@ -110,6 +105,10 @@ section{
     color: rgb(255, 238, 5);
 }
 
+.header-background{
+    background-color: rgb(93, 93, 93);
+}
+
 .header-change{
     background-color: rgb(93, 93, 93);
 }
@@ -139,35 +138,6 @@ section{
 
 .hamburger{
     display: none;
-}
-
-/* 
-* Back to top button
-*/
-
-.go-top{
-    bottom: 20px;
-    position: fixed;
-    font-size: 20px;
-    right: 25px;
-    z-index: 800;
-    background: #82b440;
-    color: #f4f4f4;
-    border-radius: 5px;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    line-height: 40px;
-    opacity: 0;
-}
-
-.go-top.show{
-    opacity: 1;
-}
-
-.go-top:hover{
-    background: #07AAA5;
-    color: #f4f4f4;
 }
 
 /* 
@@ -224,14 +194,32 @@ section{
     background: #cc0707;
 }
 
-.second-carousel{
+/* 
+* Parallax images
+*/
+
+.pimg1, .pimg2, .pimg3{
+    position: relative;
     opacity: 0.7;
-    padding: 0 0 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.second-carousel-text{
-    text-align: center;
-    margin: 80px 0 0;
+.pimg1{
+    background-image: url('img/paralax1.jpg');
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url('img/paralax2.jpg');
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url('img/paralax3.jpg');
+    min-height: 400px;
 }
 
 /* 
@@ -240,11 +228,7 @@ section{
 
 .offer{
     text-align: center;
-    padding: 80px 0 20px;
-}
-
-.offer-items{
-    margin-bottom: 50px;
+    padding: 30px 0 20px;
 }
 
 .text-block{
@@ -272,37 +256,9 @@ section{
 }
 
 .first-sections-block{
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 100%;
     margin: 0 auto;
-}
-
-/* 
-* First parallax image for main
-*/
-
-.pimg1, .pimg2, .pimg3{
-    position: relative;
-    opacity: 0.7;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.pimg1{
-    background-image: url('img/paralax1.jpg');
-    min-height: 100%;
-}
-
-.pimg2{
-    background-image: url('img/paralax2.jpg');
-    min-height: 400px;
-}
-
-.pimg3{
-    background-image: url('img/paralax3.jpg');
-    min-height: 400px;
 }
 
 /* 
@@ -332,42 +288,46 @@ section{
 }
 
 /* 
-* To remove the unwanted border from bootstrap
+* Second section Fancybox pictures and text
 */
 
-.second-paralax-padding, .third-paralax-padding{
-    padding: 0;
+.center h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
 }
 
-.row{
-    margin-right: 0;
-    margin-left: 0;
-}
-
-/* 
-* Youtube video/fancybox
-*/
-
-.youtube:visited, .youtube:link, .youtube:hover{
-    text-decoration: none;
-}
-
-.youtube-text{
+.center{
     text-align: center;
-    background-color: #f4f4f4;
-    color: #333;
-    opacity: 0.8;
-    width: fit-content;
-    margin: 200px auto;
 }
 
-.youtube-text h2{
-    font-size: 50px;
-    padding: 0 5px;
+.fancy-block{
+    margin: 0 0 30px;
+    padding: 0;
+    background-clip: padding-box;
+    border: 10px solid transparent;
+    background-color: #333;
+    opacity: 0.85;
 }
 
-.youtube-text h2 span{
-    color: red;
+.fancy-pic{
+    width: 100%;
+}
+
+.fancy-img-block-height{
+    height: 100%;
+}
+
+.center h3{
+    color: #f4f4f4;
+    opacity: 0.85;
+    padding: 5px;
+}
+
+.p-text{
+    text-align: center;
+    margin: 20px 0;
+    color: #f4f4f4;
+    opacity: 0.85;
 }
 
 /* 
@@ -381,7 +341,7 @@ section{
 }
 
 .vid{
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .iframe{
@@ -391,6 +351,170 @@ section{
     width: 100%;
     height: 100%;
     margin: 0 0 40px;
+}
+
+/* 
+* Third section text
+*/
+
+.center a:hover{
+    text-decoration: none;
+}
+
+.center-info{
+    text-align: center;
+    color: #f4f4f4;
+}
+
+.center-info .fa{
+    font-size: 20px;
+}
+
+.info-block a, .info-block h2{
+    width: 100%;
+}
+
+.tel, .email, .vieta{
+    color: #f4f4f4;
+}
+
+.tel:hover, .tel:link, .tel:visited, .vieta:hover, .vieta:link, .vieta:visited{
+    font-size: 24px;
+}
+
+.tel:hover, .tel:focus, .email:hover, .email:focus, .vieta:hover, .vieta:focus{
+    color: #07AAA5;
+    text-decoration: none;
+}
+
+.email{
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    word-wrap: break-word;
+}
+
+.fa-envelope-o{
+    font-size: 40px;
+}
+
+.kontakti{
+    background-color: #333;
+}
+
+.info-block{
+    padding: 100px 0;
+}
+
+/* 
+* Google maps
+*/
+
+#map{
+    height: 400px;
+    width: 100%;
+    margin: 0 0 30px;
+}
+
+/* 
+* Footer
+*/
+
+footer{
+    text-align: center;
+}
+
+/* 
+* Back to top button
+*/
+
+.go-top{
+    bottom: 20px;
+    position: fixed;
+    font-size: 20px;
+    right: 25px;
+    z-index: 800;
+    background: #82b440;
+    color: #f4f4f4;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    opacity: 0;
+}
+
+.go-top.show{
+    opacity: 1;
+}
+
+.go-top:hover{
+    background: #07AAA5;
+    color: #f4f4f4;
+}
+
+/* 
+* Social media
+*/
+
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 35px;
+    border-radius: 50%;
+    margin: 5px 2px;
+}
+
+.fa-facebook, .fa-facebook:hover, .fa-facebook:link, .fa-facebook:visited{
+    background: #3B5998;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-youtube, .fa-youtube:hover, .fa-youtube:link, .fa-youtube:visited{
+    background: #bb0000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-google, .fa-google:hover, .fa-google:link, .fa-google:visited{
+    background: #dd4b39;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.fa-linkedin, .fa-linkedin:hover, .fa-linkedin:link, .fa-linkedin:visited{
+    background: #007bb5;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-twitter, .fa-twitter:hover, .fa-twitter:link, .fa-twitter:visited{
+    background: #55ACEE;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-facebook:hover, .fa-youtube:hover, .fa-google:hover,
+.fa-linkedin:hover, .fa-twitter:hover{
+    opacity: 0.7;
+}
+
+/* 
+* To remove the unwanted border from bootstrap
+*/
+
+.second-paralax-padding, .third-paralax-padding{
+    padding: 0;
+}
+
+.row{
+    margin-right: 0;
+    margin-left: 0;
 }
 
 /* 
@@ -418,7 +542,7 @@ section{
     * Turn parallax effect off for mobile screen size
     */
 
-    .pimg1{
+    .pimg1, .pimg2, .pimg3{
         background-attachment: scroll;
     }
 
@@ -525,10 +649,34 @@ section{
     }
 
     /* 
+    * Main sections carousel height
+    */
+
+    .relative{
+        height: 200px;
+    }
+
+    /* 
     * Second parralax div section
     */
 
     .ptext{
         font-size: 16px;
+    }
+
+    /* 
+    * Third section text
+    */
+
+    .info-block h2{
+        font-size: 20px;
+    }
+
+    .tel:link{
+        font-size: 20px;
+    }
+
+    .email{
+        font-size: 20px;
     }
 }
